@@ -2,7 +2,7 @@ SELECT
     emp.id,
     concat(emp.firstname, " ", emp.lastname) name,
     role.title,
-    dept.nmae department,
+    dept.name department,
     role.salary,
     concat(manager.firstname, " ", manager.lastname) manager_name
 

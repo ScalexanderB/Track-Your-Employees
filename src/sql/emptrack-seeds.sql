@@ -6,7 +6,7 @@ INSERT INTO employee (firstname, lastname, manageryn) VALUES ('Jasmine','Smith',
 
 INSERT INTO department (name) VALUES ('Marketing');
 
-INSERT INTO role (title, salary) VALUES ('Digital Marketer', 60,000.00),('Marketing Manager', 90,000.00);
+INSERT INTO role (title, salary) VALUES ('Digital Marketer', 60000.00),('Marketing Manager', 90000.00);
 
 UPDATE employee SET role_id=(select id from role where title = 'Marketing Manager') where employee.firstname = 'Jasmine' and employee.lastname = 'Smith';
 

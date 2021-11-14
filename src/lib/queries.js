@@ -9,10 +9,10 @@ const queries = {
     addEmployee: fs.readFileSync(path.join(__dirname, '../sql/addEmployee.sql')).toString(),
     addDepartment: fs.readFileSync(path.join(__dirname, '../sql/addDepartment.sql')).toString(),
     addRole: fs.readFileSync(path.join(__dirname, '../sql/addRole.sql')).toString(),
-    updateEmployee: fs.readFileSync(path.join(__dirname, '../sql/updateEmployee.sql')).toString(),
-    viewAllEmployeesByManager: fs.readFileSync(path.join(__dirname, '../sql/viewEmployeesByManager.sql')).toString(),
+    updateEmployee: fs.readFileSync(path.join(__dirname, '../sql/updateEmployees.sql')).toString(),
+    viewEmployeesByManager: fs.readFileSync(path.join(__dirname, '../sql/viewEmployeesByManager.sql')).toString(),
     viewUtilizedBudget: fs.readFileSync(path.join(__dirname, '../sql/viewUtilizedBudget.sql')).toString(),
-    deleteEmployee: fs.readFileSync(path.join(__dirname, '../sql/deleteEmployee.sql')).toString(),
+    deleteEmployee: fs.readFileSync(path.join(__dirname, '../sql/deleteEmployees.sql')).toString(),
     deleteRole: fs.readFileSync(path.join(__dirname, '../sql/deleteRole.sql')).toString(),
     deleteDepartment: fs.readFileSync(path.join(__dirname, '../sql/deleteDepartment.sql')).toString()
 }

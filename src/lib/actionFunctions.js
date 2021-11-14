@@ -10,7 +10,6 @@ const inquirer = require("inquirer");
 const actionsList = require('./actionsList');
 // Allows use of promises for connection.query
 const util = require("util");
-const { deepStrictEqual } = require('assert');
 const query = util.promisify(connection.query).bind(connection);
 
 // Initializing function
@@ -224,7 +223,7 @@ const addEmployeeQ = async () => {
                             })
                             return choiceArray;
                         },
-                        message: "Choose a manger for the new employee."
+                        message: "Choose a manager for the new employee."
                     }
                 ])
                 .then((answer) => {
